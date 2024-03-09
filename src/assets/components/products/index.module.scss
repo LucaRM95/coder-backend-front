@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  &__item {
+    height: 50%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+    margin: 1rem !important;
+    background-color: white;
+    border-radius: 0.5rem;
+    color: black;
+    &_image {
+      display: flex;
+      justify-content: center;
+      height: 60%;
+      padding-right: 8px;
+      img {
+        height: 100%;
+      }
+    }
+    &_boxsuccess{
+        display: flex;
+        justify-content: center;
+        background-color: green;
+        width: 50%;
+        border-radius: .2rem;
+        color: white;
+        font-weight: 600;
+    }
+    &_boxerror{
+        width: 60%;
+        @extend .container__item_boxsuccess;
+        background-color: crimson;
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0.5rem;
+      padding: 0;
+      height: 35%;
+      p {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      h3 {
+        font-size: x-large;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+  }
+}
