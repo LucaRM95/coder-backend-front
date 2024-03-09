@@ -28,6 +28,7 @@ const RegisterForm = () => {
         <FormControlAtom
           text="Usuario"
           htmlFor="outlined-user"
+          onChange={() => {}}
           type="text"
           label="User"
           icon={<AccountCircleRounded />}
@@ -35,6 +36,7 @@ const RegisterForm = () => {
         <FormControlAtom
           text="Email"
           htmlFor="outlined-email"
+          onChange={() => {}}
           type="email"
           label="Email"
           icon={<AlternateEmailRounded />}
@@ -42,6 +44,7 @@ const RegisterForm = () => {
         <FormControlAtom
           text="Dirección"
           htmlFor="outlined-address"
+          onChange={()=>{}}
           type="text"
           label="Address"
           icon={<HomeRounded />}
@@ -49,6 +52,7 @@ const RegisterForm = () => {
         <FormControlAtom
           text="Localidad"
           htmlFor="outlined-location"
+          onChange={()=>{}}
           type="text"
           label="Location"
           icon={<HomeRounded />}
@@ -56,6 +60,7 @@ const RegisterForm = () => {
         <FormControlAtom
           text="Contraseña"
           htmlFor="outlined-password"
+          onChange={()=>{}}
           type="password"
           label="Password"
           handleShowPassword={handleShowPassword}
@@ -64,6 +69,7 @@ const RegisterForm = () => {
         <FormControlAtom
           text="Confirmar contraseña"
           htmlFor="outlined-confirm-password"
+          onChange={()=>{}}
           type="password"
           label="Confirm-password"
           handleShowPassword={handleShowConfirmPassword}
